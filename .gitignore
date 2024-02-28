@@ -1,6 +1,10 @@
 *.mp4
 
-data
+data/Face-to-Face
+data/Zoom
+data/.Rhistory
+
+.~lock.*#
 
 
 .idea
