@@ -1,6 +1,10 @@
 # dsy-behavioral-experiments
 
+Currently complete video data and mostly complete response data is provided for one experiment. 
+
 ## Negotiation Game Theory
+
+### General info
 
 The method used within this experiment is largely based upon the 'iterated ultimatum game (iUG)', an experimental game previously used by Shaw et al. (2018) among others 
 (more info here - https://www.nature.com/articles/s41598-018-29233-9). The idea is that pairs of participants negotiate over the division of a sum of money (100kr). 
@@ -35,8 +39,12 @@ The video corresponds to the filenames of the videos as well as the output files
 Silence detection has been performed on all the studio videos since microphone problems have been reported for this setting. 
 See: [Silence Detection Notebook](silence_detection_notebook.ipynb). A flag has been added to the full dataset file where complete or partial silence has been identified.
 
-The questionnaire items are present in the full dataset file, an overview of all items is also provided in [Items](data/out/items.csv)
-where each item has also been given a code. This code is not used elsewhere.
+The questionnaire items are present in the full dataset file, data is mostly complete, some missing for one dyad (2 participants). 
+An overview of all item questions is also provided in [Items](data/out/items.csv) where each item has also been given a code. 
+This code is not used elsewhere.
+
+Apart from questionnaire items each id also has points, which indicate how many points each participant got in the experiment. 
+This data is mostly complete, points are missing for 2 dyads (4 participants).
 
 Most other files are intermediaries used to create the final Full Dataset file and can be disregarded. 
 
