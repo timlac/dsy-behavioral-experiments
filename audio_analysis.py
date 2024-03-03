@@ -57,7 +57,7 @@ def plot_sound_levels_overview(dbfs_data, title='Sound Level Overview'):
     non_silent_label_added = False
 
     for key, val in dbfs_data.items():
-        data, is_silent = val
+        data, is_silent, partly_silent = val
         if is_silent and not silent_label_added:
             plt.plot(data, color='blue', alpha=0.7, label='Silent')
             silent_label_added = True  # Ensure label is added only once
@@ -93,10 +93,12 @@ def main():
 
         file_mean = np.mean(dbfs_values)
         is_silent = file_mean < -90
+        partly_silent = np.any(dbfs_values == SILENCE_THRESHOLD)
+
         if is_silent:
             print(f'file {os.path.basename(path)} is silent')
 
-        dbfs_data[path] = (dbfs_values, is_silent)
+        dbfs_data[path] = (dbfs_values, is_silent, partly_silent)
 
     plot_sound_levels_overview(dbfs_data)
 
