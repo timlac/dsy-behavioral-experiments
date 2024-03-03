@@ -13,10 +13,30 @@ This document is not complete and the zoom videos are missing. In its current st
 
 All videos are in .mp4 format. However, the video quality varies across the two conditions. For example, the videos captured in the lab were recorded under lighting conditions, 
 with the same Axis IP cameras used for all dyads. This was not the case for the Zoom videos. Some of the recordings are therefore better quality than others (potentially due to 
-camera resolution, network latency and so on...). 
+camera resolution, network latency and so on...). All lab videos were recorded at 25 frames per second (fps). Videos taken recorded via Zoom have differing rates (e.g. participant 
+10B = 30fps, whereas 7B = 25fps).
 
 Audio is available for all recordings taken via Zoom. Audio is not available for some of the video recordings taken in the lab (see 'Ultimatum Game Video Segmentation' 
 Excel document for further details on which videos specifically). The loss of audio recording occurred due to an undetected fault with the microphone.
 
 All Zoom recordings have been edited using ‘Camtasia’ software.  The ‘editing’ refers to the cropping of individual videos from the original recordings 
 in Zoom (which contained images of both participants).  
+
+### Files of interest
+
+[Full Dataset](data/out/full_dataset.csv) contains the response data for all the videos. Each video has an id, 
+e.g. `F18B` or `Z3A` 
+- where the initial letter indicates setting (`Z`=zoom and `F`=studio).
+- The number indicates the dyad id
+- `A` and `B` indicates the participant in the dyad, each participant has a separate video. 
+
+The video corresponds to the filenames of the videos as well as the output files from opensmile/openface. 
+
+Silence detection has been performed on all the studio videos since microphone problems have been reported for this setting. 
+See: [Silence Detection Notebook](silence_detection_notebook.ipynb). A flag has been added to the full dataset file where complete or partial silence has been identified.
+
+The questionnaire items are present in the full dataset file, an overview of all items is also provided in [Items](data/out/items.csv)
+where each item has also been given a code. This code is not used elsewhere.
+
+Most other files are intermediaries used to create the final Full Dataset file and can be disregarded. 
+
