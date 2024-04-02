@@ -48,3 +48,10 @@ This data is mostly complete, points are missing for 2 dyads (4 participants).
 
 Most other files are intermediaries used to create the final Full Dataset file and can be disregarded. 
 
+# Documentation 
+
+Openface output format: https://github.com/TadasBaltrusaitis/OpenFace/wiki/Output-Format
+
+For opensmile the feature set `eGeMAPSv02` is used with low level descriptors. For a full description of the features see the [paper](https://sail.usc.edu/publications/files/eyben-preprinttaffc-2015.pdf). 
+See also the opensmile documentation: https://audeering.github.io/opensmile-python/
+
