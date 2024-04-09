@@ -1,7 +1,7 @@
 import pandas as pd
 from glob import glob
 
-zoom_df = pd.read_csv("data/out/zoom.csv")
+zoom_df = pd.read_csv("../data/out/negotiation/zoom.csv")
 
 empathy_questions = zoom_df.iloc[:, 7: 27]
 experiment_questions = zoom_df.iloc[:, 27: 48]
@@ -14,7 +14,7 @@ df_1 = pd.DataFrame({"codes": codes,
                    'items': list(empathy_questions.columns) + list(experiment_questions.columns)})
 
 
-F2F_df = pd.read_csv("data/out/f2f.csv")
+F2F_df = pd.read_csv("../data/out/negotiation/f2f.csv")
 
 F2F_df.columns = [col.lower() for col in F2F_df.columns]
 F2F_df.columns = F2F_df.columns.str.strip()

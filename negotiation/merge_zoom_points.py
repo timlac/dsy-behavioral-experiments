@@ -10,7 +10,7 @@ def convert_to_int(item):
         return None
 
 
-path = "data/Points_Zoom_dyads.xlsx"
+path = "../data/negotiation/Points_Zoom_dyads.xlsx"
 
 df = pd.read_excel(path, header=None)
 

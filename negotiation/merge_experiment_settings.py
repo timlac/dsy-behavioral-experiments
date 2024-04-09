@@ -1,8 +1,8 @@
 import pandas as pd
 
-zoom_df = pd.read_csv("data/out/zoom.csv")
-F2F_df = pd.read_csv("data/out/f2f.csv")
-items_df = pd.read_csv("data/out/items.csv")
+zoom_df = pd.read_csv("../data/out/negotiation/zoom.csv")
+F2F_df = pd.read_csv("../data/out/negotiation/f2f.csv")
+items_df = pd.read_csv("../data/out/negotiation/items.csv")
 
 
 #

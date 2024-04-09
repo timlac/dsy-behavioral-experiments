@@ -28,7 +28,7 @@ in Zoom (which contained images of both participants).
 
 ### Files of interest
 
-[Full Dataset](data/out/full_dataset.csv) contains the response data for all the videos. Each video has an id, 
+[Full Dataset](data/out/negotiation/full_dataset.csv) contains the response data for all the videos. Each video has an id, 
 e.g. `F18B` or `Z3A` 
 - where the initial letter indicates setting (`Z`=zoom and `F`=studio).
 - The number indicates the dyad id
@@ -37,10 +37,10 @@ e.g. `F18B` or `Z3A`
 The video corresponds to the filenames of the videos as well as the output files from opensmile/openface. 
 
 Silence detection has been performed on all the studio videos since microphone problems have been reported for this setting. 
-See: [Silence Detection Notebook](silence_detection_notebook.ipynb). A flag has been added to the full dataset file where complete or partial silence has been identified.
+See: [Silence Detection Notebook](negotiation/silence_detection_notebook.ipynb). A flag has been added to the full dataset file where complete or partial silence has been identified.
 
 The questionnaire items are present in the full dataset file, data is mostly complete, some missing for one dyad (2 participants). 
-An overview of all item questions is also provided in [Items](data/out/items.csv) where each item has also been given a code. 
+An overview of all item questions is also provided in [Items](data/out/negotiation/items.csv) where each item has also been given a code. 
 This code is not used elsewhere.
 
 Apart from questionnaire items each id also has points, which indicate how many points each participant got in the experiment. 

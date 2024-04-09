@@ -1,8 +1,8 @@
 *.mp4
 
-data/Face-to-Face
-data/Zoom
-data/.Rhistory
+data/negotiation/Face-to-Face
+data/negotiation/Zoom
+data/negotiation/.Rhistory
 
 .~lock.*#
 

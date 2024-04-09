@@ -29,7 +29,7 @@ columns_to_rename = zoom_df.columns[27:48]
 zoom_df.rename(columns={col: f"{i+1}. {col}" for i, col in enumerate(columns_to_rename)}, inplace=True)
 
 # merge zoom df with points which are in a separate file
-zoom_points_df = pd.read_csv("data/out/points_zoom.csv")
+zoom_points_df = pd.read_csv("../data/out/negotiation/points_zoom.csv")
 merged_zoom_df = pd.merge(zoom_df, zoom_points_df, on='id', how='left')
 
 
